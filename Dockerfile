@@ -30,3 +30,5 @@ RUN git clone --depth 1 --branch 1.1.2 https://github.com/raspberrypi/picotool.g
     make && \
     cp /home/picotool/build/picotool /bin/picotool && \
     rm -rf /home/picotool
+
+RUN pip install protobuf grpcio-tools
