@@ -11,7 +11,9 @@ RUN apk update && \
             libusb-dev \
             bsd-compat-headers \
             newlib-arm-none-eabi \
-            gcc-arm-none-eabi
+            gcc-arm-none-eabi \
+            libsndfile \
+            libsamplerate
 
 # Raspberry Pi Pico SDK
 ARG SDK_PATH=/usr/share/pico_sdk
